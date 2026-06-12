@@ -16,9 +16,10 @@ jobs:
           npm --version
       - name: Login to Buddy
         uses: buddy/login@v1
-        with:
-          provider_id: '652bedb5-0c93-4cbf-bcfb-395c994bbe86'
-          region: 'EU' 
+        with: 
+          region: EU
+          provider_id: 652bedb5-0c93-4cbf-bcfb-395c994bbe86
+
 
 
 
