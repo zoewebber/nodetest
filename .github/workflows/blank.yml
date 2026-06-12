@@ -23,6 +23,14 @@ jobs:
           npm --version
       - name: Login to Buddy
         uses: buddy/login@v1
+        with:
+          token: ${{ secrets.BT }}
+      - name: Show installed Node version
+        run: |
+          node --version
+          npm --version   
+      - name: Login to Buddy
+        uses: buddy/login@v1
         with: 
           region: EU
           provider_id: 652bedb5-0c93-4cbf-bcfb-395c994bbe86
