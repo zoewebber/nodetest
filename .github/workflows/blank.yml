@@ -21,6 +21,7 @@ jobs:
         run: |
           node --version
           npm --version
+          bdy version
       - name: Login to Buddy
         uses: buddy/login@v1
         with:
@@ -29,6 +30,7 @@ jobs:
         run: |
           node --version
           npm --version   
+          bdy version
       - name: Login to Buddy
         uses: buddy/login@v1
         with: 
