@@ -1,0 +1,24 @@
+name: Node version
+
+on:
+  workflow_dispatch: 
+  push:
+
+jobs:
+  node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show installed Node version
+        run: |
+          node --version
+          npm --version
+      - name: Login to Buddy
+        uses: buddy/login@v1
+        with:
+          provider_id: '652bedb5-0c93-4cbf-bcfb-395c994bbe86'
+          region: 'EU' 
+
+
+
+
+
