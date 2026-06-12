@@ -30,6 +30,7 @@ jobs:
         uses: buddy/artifact-publish@v1
         with:
           workspace: playground
+          project: clinet
           identifier: art1
           directory: .          
       - name: Show installed Node version
