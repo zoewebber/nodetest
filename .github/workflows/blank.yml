@@ -29,8 +29,8 @@ jobs:
       - name: Publish artifact
         uses: buddy/artifact-publish@v1
         with:
-          workspace: my-workspace
-          identifier: playground
+          workspace: playground
+          identifier: art1
           directory: .          
       - name: Show installed Node version
         run: |
